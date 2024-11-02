@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grocery Store Order Form</title>
+
+    <link rel="stylesheet" href="grocery.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Order Groceries</h1>
+
+        <form id="orderForm">
+
+            <label for="customerName">Customer Name:</label>
+
+            <input type="text" id="customerName" required>
+
+ 
+
+            <label for="mobile">Mobile Number:</label>
+
+            <input type="tel" id="mobile" required>
+
+ 
+
+            <label for="address">Delivery Address:</label>
+
+            <textarea id="address" rows="4" required></textarea>
+
+ 
+
+            <label for="groceryItems">Grocery Items:</label>
+
+            <textarea id="groceryItems" rows="4" placeholder="Enter grocery items separated by commas" required></textarea>
+
+ 
+
+            <label for="deliveryDate">Preferred Delivery Date:</label>
+
+            <input type="date" id="deliveryDate" required>
+
+ 
+
+            <label for="specialInstructions">Special Instructions:</label>
+
+            <textarea id="specialInstructions" rows="2" placeholder="Any special requests?"></textarea>
+
+ 
+
+            <button type="submit">Submit Order</button>
+
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+ 
+
+    <script src="grocery.js"></script>
+
+</body>
+
+</html>
